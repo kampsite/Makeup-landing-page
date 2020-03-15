@@ -1,0 +1,52 @@
+.form
+    display: flex
+    flex-direction: column
+    margin: 8em auto  
+
+    .form__row
+        display: flex
+        flex-direction: column
+        position: relative
+        margin: 0.5em 1em
+                
+        label
+            position: absolute
+            left: 0.5em
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center     
+            .fas,
+            .far
+                display: block
+                font-size: 1.8em
+
+        input, textarea
+            display: block
+            line-height: 2em
+            padding-left: 3em
+            min-height: 5em
+            border: 0.2em solid #eee
+            transition: 0.3s
+
+            &:focus 
+                border-color: $color2
+        textarea
+            min-height: 12em
+
+        .form__row__terms
+            height: 100%
+
+        
+
+@media only screen and (min-width: 700px)
+    .form
+        flex-direction: row
+        justify-content: center
+        flex-wrap: wrap
+
+        .form__row
+            width: 40%
+            justify-content: center
+            input, textarea
+                width: 90%

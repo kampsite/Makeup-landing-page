@@ -1,0 +1,300 @@
+///****************************************************** INFO ***********************************************************
+.info
+    overflow: hidden
+
+    .info__address
+        display: flex
+        flex-direction: column
+        color: $color1
+        flex-wrap: wrap
+        z-index: 888
+        background-color: $color4
+        padding: 1.2em
+
+        p
+            width: 100%
+            text-align: center
+            font-size: $fontSizeMobileText
+            align-self: center
+            text-transform: uppercase
+            padding: 0.4em 0
+
+            .fas
+                margin: 0.5em
+                font-size: $fontSizeMobileText
+                color: $color8
+
+    .info__gallery
+        position: relative
+        min-height: 18em
+        display: flex
+        justify-content: center
+
+        &:after
+            content: ""
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            background-image: url("../assets/img/photo_banner.jpg")
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: 50% 0%
+            background-attachment: fixed
+            filter: opacity(10%)
+            height: 100%
+            width: 100%
+
+    .info__gallery-btn
+        display: flex
+        justify-content: center
+        align-items: center
+
+@media only screen and (min-width: 1024px)
+    .info
+        .info__address
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+
+            p
+                width: 25%
+
+                .fas
+                    margin: 1em 0.7em
+                    font-size: $desktopFontSizeText
+
+// // *********************************************************************SECTION ABOUT
+
+.about
+    background-color: $jumbotron
+    padding: 2em
+
+    .about__inner-container
+        width: 100%
+        background-color: $jumbotron
+        display: flex
+        flex-direction: column
+        text-align: center
+
+        +max-width-container
+
+        .about__img
+            img
+                +box-shadow
+
+        .about__box
+            padding-top: 2em
+            color: $color1
+
+            .about__box-icon
+                width: 10%
+                margin: 0 auto
+                padding-bottom: 2em
+
+        .about__box-description
+            width: 100%
+
+            &::after
+                +line
+
+@media only screen and (min-width: 1024px)
+    .about
+        .about__inner-container
+            flex-direction: row
+
+        .about__box
+            width: 100%
+            color: $color8
+            text-align: center
+            padding: 0 1em
+
+            .about__box-description
+                padding: 0 1em
+
+// *********************************************************************SECTION SERVICES
+
+.services
+    .services__inner
+        width: 100%
+        background-color: $color4
+        display: flex
+        flex-direction: column
+        text-align: center
+
+        .services__boxes
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+
+            .services__box
+                flex-basis: 32%
+                margin: 0.5em
+                color: $color1
+                transition: 0.5s
+                background-color: $jumbotron
+                display: flex
+                flex-direction: column
+                align-items: center
+                min-height: 800px
+
+                img
+                    transition: transform 0.5s ease
+                    max-width: 95%
+
+                    +box-shadow
+
+                .box__caption
+                    height: 100%
+                    padding: 1em
+                    display: flex
+                    flex-direction: column
+                    flex-grow: 1
+
+                    .box__title
+                        font-weight: 900
+                        padding: 1em 0
+                        text-transform: uppercase
+                        color: $color2
+
+                    // .box__description
+                    //     font-size: $fontSizeMobileText
+
+                        &::after
+                            +line
+
+                    .box__buttons
+                        height: 100%
+                        display: flex
+                        flex-direction: column
+                        justify-content: flex-end
+                        flex-grow: 1
+
+                        .box__button
+                            font-size: 0.8em
+                            line-height: 1.5em
+                            letter-spacing: 0.5em
+
+                        .box__button-price
+                            display: block
+                            font-weight: bold
+                            font-size: 2.5em
+                            letter-spacing: 0.1em
+                            text-transform: lowercase
+
+@media only screen and (min-width: 1024px)
+    .services
+        .services__inner
+            // p
+            //     font-size: $desktopFontSizeText
+
+            .services__boxes
+                flex-direction: row
+                width: 100%
+
+                .services__box
+                    padding: 1.5em 1em
+
+                    img
+                        width: 100%
+
+                        &:hover
+                            transform: scale(1.1)
+
+                    .box__title
+                        // font-size: $desktopFontSizeH3
+
+// *********************************************************************SECTION GALLERY
+.gallery
+    width: 100%
+
+    .gallery__container
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        flex-wrap: wrap
+        align-content: space-evenly
+
+        .gallery__item
+            flex-basis: 100%
+            width: 100%
+            padding: 1em
+            cursor: pointer
+
+        img
+            transition: 0.3s
+            width: 100%
+
+            &:hover
+                filter: grayscale(50)
+                transform: scale(1.03)
+
+@media only screen and (min-width: 1024px)
+    .gallery
+        .gallery__container
+            flex-direction: row
+
+            .gallery__item
+                flex-basis: 33%
+
+// *********************************************************************SECTION OPINION
+
+.opinion
+    display: flex
+    justify-content: center
+    width: 100%
+
+    .opinion__boxes
+        width: 100%
+        z-index: 999
+
+        .opinion__boxes-content
+            padding: 2em 0
+            text-align: center
+            color: $color4
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+
+            .quote
+                display: block
+                font-weight: 500
+                font-size: 1.9em
+                line-height: 1.4em
+                width: 80%
+                text-align: center
+                display: block
+                margin: 0 auto
+
+            img
+                display: block
+                width: 20%
+                border-radius: 50%
+                margin: 2em auto
+
+            p
+                display: block
+                font-style: italic
+                color: $color2
+                font-size: 1.4em
+
+@media only screen and (min-width: 1024px)
+    .opinion
+        .opinion__boxes
+            .opinion__boxes-content
+                width: 100%
+                padding: 3em 15em
+                img
+                    width: 5%
+
+// *********************************************************************SECTION CONTACT
+
+.contact__inner
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .contact__text
+        text-align: center

@@ -1,0 +1,77 @@
+// *******************************************BUTTON STYLE
+.btn
+    display: block
+    font-size: $fontSizeMobileText
+    text-align: center
+    font-weight: bold
+    padding: 1.5em 2em
+    text-decoration: none
+    cursor: pointer
+    text-transform: uppercase
+    line-height: $fontSizeMobileText
+    border: 0.1em solid transparent
+
+    &:hover
+        color: #333
+        text-decoration: none
+
+    &:focus
+        color: #333
+        text-decoration: none
+
+    &:active
+        background-image: none
+        outline: 0
+        box-shadow: inset 0 0.3em 0.5em rgba(0, 0, 0, 0.125)
+
+/// RED BUTTON STYLE
+.btn-red
+    color: #fff
+    background-color: rgba(229, 107, 112, 1)
+
+    &:focus
+        color: #ffffff
+        background-color: rgba(229, 107, 112, 1)
+
+    &:hover
+        color: #fff
+        background-color: da6f73f19
+
+    &:active
+        transform: translateY(3px)
+
+.btn-trans
+    color: $color1
+    background-color: transparent
+    border: 0.2em solid $color1
+    z-index: 66
+    padding: 1em 6em
+    transition: 0.3s
+
+    &:hover
+        background-color: $color1
+        color: #fff
+
+        // border: 0
+
+        &:active
+            background-color: $color1
+            transform: translateY(3px)
+
+.btn-trans-color
+    background-color: $color2
+    color: $color4
+    border: none
+
+@keyframes scale
+    25%
+        transform: scale(1.1)
+
+    50%
+        transform: scale(1.2)
+
+    75%
+        transform: scale(1.1)
+
+    100%
+        transform: scale(1)

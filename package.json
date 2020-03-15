@@ -1,0 +1,51 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnPaste": true,
+  "editor.wordWrap": "on",
+  "files.autoSave": "afterDelay",
+  "window.zoomLevel": 0,
+  "prettier.jsxSingleQuote": true,
+  "editor.formatOnSave": true,
+  "eslint.run": "onSave",
+  "prettier.jsxBracketSameLine": true,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.sass": "sass"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sass]": {},
+  "name": "makeup",
+  "version": "1.0.0",
+  "description": "makeup website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamil Pawlak",
+  "license": "ISC",
+  "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-webp": "^5.1.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}

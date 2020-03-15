@@ -1,0 +1,23 @@
+.loader
+    align-items: center
+    background: rgb(23, 22, 22)
+    display: flex
+    height: 100vh
+    justify-content: center
+    left: 0
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 9999
+
+    img
+        width: 100px
+
+.hidden
+    animation: fadeOut 1s
+    animation-fill-mode: forwards
+
+@keyframes fadeOut
+    100%
+        opacity: 0
+        visibility: hidden

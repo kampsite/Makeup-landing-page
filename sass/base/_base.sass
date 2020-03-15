@@ -1,0 +1,152 @@
+$color1: rgba(56, 55, 53, 1)
+// $color2: rgba(179, 140, 117, 1)
+$color2: #BBA454
+$color3: rgba(237, 118, 179, 1)
+$color4: rgba(254, 254, 254, 1)
+$color5: rgba(194, 175, 166, 1)
+$color6: rgba(255, 208, 208, 1)
+$color7: rgba(237, 118, 179, 1)
+$color8: rgba(229, 107, 112, 1)
+$color9: rgba(0, 0, 0, 0.3)
+
+$fontCursive: Clicker Script, sans-serif
+$fontRaleway: Raleway, sans-serif
+$fontSize: 10px
+$jumbotron: #f3f1f1
+
+//****MOBILE OPTION**
+
+//font-size h1
+$mobileFontSizeH1: 3.5em
+
+// font-size h2
+$mobileFontSizeH2: 2.5em
+
+// font-size h3
+$mobileFontSizeH3: 1.8em
+
+// font-size h4
+$mobileFontSizeH4: 1.2em
+
+// font-size p, span, blauqout
+$fontSizeMobileText: 1.4em
+
+//****DESKTOP OPTION***//
+
+//font-size h1
+$desktopFontSizeH1: 2em
+
+//font-size h2
+$desktopFontSizeH2: 1em
+
+//font-size h3
+$desktopFontSizeH3: 2.2em
+
+// font-size h4
+$desktopFontSizeH4: 1.5em
+
+//font-size p, span, blauqout
+$desktopFontSizeText: 1.8em
+
+//http://meyerweb.com/eric/tools/css/reset/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+h1
+  font-size: 4.5em
+
+h2
+  font-size: 2.5em
+
+h3
+  font-size: 1.8em
+
+p
+  font-size: 1.6em
+
+input
+  font-size: 1.4em
+
+
+//* HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 2.5em
+  font-family: $fontRaleway
+  font-size: $fontSize
+  color: #383735
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ""
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+img
+  max-width: 100%
+  height: auto
+
+.bx-wrapper
+  position: relative
+  margin-bottom: 6em
+  padding: 0
+  touch-action: pan-y
+  box-shadow: none
+  border: none
+  background: rgba(56, 55, 53, 0.9)
+  z-index: 998
+
+section
+  margin: 8em 0
+
+  &:nth-of-type(1)
+    margin: 0
+
+.section-title
+  color: $color1
+  text-transform: uppercase
+  font-weight: 700
+  padding: 0 0 1em 0
+  text-align: center
+
+.section-title-sub
+  color: $color2
+  font-weight: 700
+  margin: 0.5em 0 1em 0
+
+.container
+  +max-width-container
