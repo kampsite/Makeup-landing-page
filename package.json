@@ -42,7 +42,8 @@
     "imagemin": "^7.0.1",
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-pngquant": "^8.0.0",
-    "imagemin-webp": "^5.1.0"
+    "imagemin-webp": "^5.1.0",
+    "jquery-parallax.js": "^1.5.0"
   },
   "devDependencies": {
     "webpack": "^4.41.6",
