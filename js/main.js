@@ -33,20 +33,20 @@ window.addEventListener("load", function() {
   loader.className += " hidden"; // class "loader hidden"
 });
 
-function parallax() {
-  let $header = document.querySelector(".header");
+// function parallax() {
+//   let $header = document.querySelector(".header");
 
-  let yPos = window.pageYOffset / $header.dataset.speed;
-  yPos = -yPos;
+//   let yPos = window.pageYOffset / $header.dataset.speed;
+//   yPos = -yPos;
 
-  let coords = "60%" + yPos + "px";
+//   let coords = "60%" + yPos + "px";
 
-  $header.style.backgroundPosition = coords;
-}
+//   $header.style.backgroundPosition = coords;
+// }
 
-window.addEventListener("scroll", function() {
-  parallax();
-});
+// window.addEventListener("scroll", function() {
+//   parallax();
+// });
 
 $(function() {
   $(document).scroll(function() {
