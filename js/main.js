@@ -65,8 +65,8 @@ $(".navbar__top-logo img, .arrow-top").on("click", () => {
   );
 });
 
-$("nav, .info")
-  .find("a")
+$("nav, .info, .box__buttons")
+  .find("a, div")
   .click(function(e) {
     e.preventDefault();
     let section = $(this).attr("href");
