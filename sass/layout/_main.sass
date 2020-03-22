@@ -112,6 +112,7 @@
 
             .about__box-description
                 padding: 0 1em
+                float: right
 
 // *********************************************************************SECTION SERVICES
 
@@ -126,10 +127,10 @@
         .services__boxes
             display: flex
             flex-direction: column
-            flex-wrap: wrap
+            flex-wrap: nowrap
 
             .services__box
-                flex-basis: 30%
+                flex-basis: 31%
                 margin: 0.5em
                 color: $color1
                 transition: 0.5s
@@ -138,7 +139,6 @@
                 flex-direction: column
                 align-items: center
                 min-height: 800px
-                
 
                 img
                     transition: transform 0.5s ease
@@ -193,9 +193,11 @@
             .services__boxes
                 flex-direction: row
                 justify-content: center
+                flex-wrap: wrap
 
                 .services__box
-                    padding: 1.5em 
+                    flex-basis: 48%
+                    padding: 1.5em
 
                     img
                         width: 100%
@@ -205,6 +207,13 @@
 
                     .box__title
                         // font-size: $desktopFontSizeH3
+
+@media only screen and (min-width: 1024px)
+    .services
+        .services__inner
+            .services__boxes
+                .services__box
+                    flex-basis: 31%
 
 // *********************************************************************SECTION GALLERY
 .gallery
@@ -237,6 +246,12 @@
         .gallery__container
             flex-direction: row
 
+            .gallery__item
+                flex-basis: 50%
+
+@media only screen and (min-width: 1024px)
+    .gallery
+        .gallery__container
             .gallery__item
                 flex-basis: 33%
 
