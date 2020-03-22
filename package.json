@@ -34,7 +34,7 @@
   "description": "makeup website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "webpack --mode development"
   },
   "author": "Kamil Pawlak",
   "license": "ISC",
